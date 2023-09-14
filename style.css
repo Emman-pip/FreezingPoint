@@ -1,5 +1,12 @@
+* {
+  --main-color: #ff7962;
+  --secondary-color: #ffe5da;
+  --brown-color: #9c5d51;
+  --blue-color: #00525c;
+}
+
 .heroPage {
-  background-color: #ffedc9;
+  background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,17 +27,21 @@
 .mainLogo {
   text-align: center;
   font-family: merit;
-  color: #ff7962;
-  -webkit-text-stroke: 1px black;
+  color: var(--main-color);
+  -webkit-text-stroke: 3px black;
 }
 
 .servicesOffered {
-  background-color: #ff8b77;
-  color: #ffedc9;
+  background-color: var(--brown-color);
+  color: var(--secondary-color);
   width: fit-content;
   border-radius: 0.5rem;
 }
 
 .soText {
   font-weight: 400;
+}
+
+.section1 {
+  background-color: var(--blue-color);
 }
