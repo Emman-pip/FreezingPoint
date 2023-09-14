@@ -5,6 +5,29 @@
   --blue-color: #00525c;
 }
 
+@font-face {
+  font-family: merit;
+  src: url("./fonts/merit4.ttf");
+}
+
+@font-face {
+  font-family: ice;
+  src: url("./fonts/IceCaps.ttf");
+}
+
+nav {
+  background-color: var(--main-color);
+}
+
+.nav-link {
+  font-family: ice;
+}
+
+.brand {
+  font-weight: 500;
+  font-family: ice;
+}
+
 .heroPage {
   background-color: var(--secondary-color);
   display: flex;
@@ -12,11 +35,6 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-@font-face {
-  font-family: merit;
-  src: url("./fonts/merit4.ttf");
 }
 
 .freezingPoint {
