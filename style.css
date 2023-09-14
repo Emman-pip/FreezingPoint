@@ -113,3 +113,46 @@ nav {
 .section4Title {
   color: var(--secondary-color);
 }
+
+@font-face {
+  font-family: logo;
+  src: url("./fonts/Social_Shapes.ttf");
+}
+
+.facebook,
+.messenger {
+  font-family: logo;
+}
+
+.contacts {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.floating {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn-float {
+  background-color: var(--main-color);
+}
