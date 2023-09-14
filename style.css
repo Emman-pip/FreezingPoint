@@ -67,4 +67,49 @@ nav {
 
 .section1 {
   background-color: var(--blue-color);
+  height: 50vh;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.section2 {
+  background-color: var(--brown-color);
+  height: 50vh;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.section3 {
+  background-color: var(--main-color);
+  height: 50vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.storePic {
+  max-height: 80vh;
+  width: auto;
+}
+
+.section4 {
+  background-color: var(--blue-color);
+}
+
+.img-thumbnail {
+  background-color: var(--secondary-color);
+}
+
+.section4Title {
+  color: var(--secondary-color);
 }
