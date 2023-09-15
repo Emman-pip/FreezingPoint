@@ -1,0 +1,166 @@
+$main-color: #ff7962;
+$secondary-color: #ffe5da;
+$brown-color: #9c5d51;
+$blue-color: #00525c;
+
+@font-face {
+  font-family: merit;
+  src: url("./fonts/merit4.ttf");
+}
+
+@font-face {
+  font-family: ice;
+  src: url("./fonts/IceCaps.ttf");
+}
+
+@font-face {
+  font-family: logo;
+  src: url("./fonts/Social_Shapes.ttf");
+}
+
+nav {
+  background-color: $main-color;
+
+  .nav-link {
+    font-family: ice;
+  }
+
+  .brand {
+    font-weight: 500;
+    font-family: ice;
+  }
+}
+
+.heroPage {
+  background-color: $secondary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  .freezingPoint {
+    text-align: center;
+    font-family: ice;
+  }
+
+  .mainLogo {
+    text-align: center;
+    font-family: merit;
+    color: $main-color;
+    -webkit-text-stroke: 3px black;
+  }
+
+  .servicesOffered {
+    background-color: $brown-color;
+    color: $secondary-color;
+    width: fit-content;
+    border-radius: 0.5rem;
+  }
+
+  .checks > div {
+    /* text-align: center; */
+    color: #00525c;
+  }
+
+  .soText {
+    font-weight: 400;
+  }
+}
+
+.section1Bg {
+  background-color: $blue-color;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section1 {
+    color: $secondary-color;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .section1Text {
+    font-weight: 500;
+  }
+}
+
+.section2 {
+  background-color: $brown-color;
+  min-height: 50vh;
+  color: $secondary-color;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.section3 {
+  background-color: $main-color;
+  min-height: 50vh;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 {
+  background-color: $blue-color;
+
+  .d-block {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .img-thumbnail {
+    background-color: $secondary-color;
+  }
+
+  .section4Title {
+    color: $secondary-color;
+  }
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+
+  .facebook,
+  .messenger {
+    font-family: logo;
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .btn-blue {
+    color: $blue-color;
+    font-size: 4rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.floating {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .btn-float {
+    color: $blue-color;
+    background-color: $main-color;
+    font-family: logo;
+  }
+}
