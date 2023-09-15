@@ -66,17 +66,28 @@ nav {
 }
 
 .section1 {
-  background-color: var(--blue-color);
-  height: 50vh;
   color: var(--secondary-color);
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
+.section1Bg {
+  background-color: var(--blue-color);
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1Text {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
 .section2 {
   background-color: var(--brown-color);
-  height: 50vh;
+  min-height: 50vh;
   color: var(--secondary-color);
   display: flex;
   justify-content: end;
@@ -85,7 +96,7 @@ nav {
 
 .section3 {
   background-color: var(--main-color);
-  height: 50vh;
+  min-height: 50vh;
   color: black;
   display: flex;
   justify-content: center;
@@ -135,7 +146,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .floating {
