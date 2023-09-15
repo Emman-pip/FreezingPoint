@@ -1,4 +1,10 @@
+@font-face {
+  font-family: merit;
+  src: url("./fonts/merit4.ttf");
+}
+
 * {
   color: red;
+  font-family: merit;
   outline: 1px solid black;
 }

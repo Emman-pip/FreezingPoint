@@ -1,5 +1,6 @@
 import _ from "lodash";
 import "./style.scss";
+import Icon from "./media/images/use3.jpg";
 import bootstrap from "bootstrap";
 
 const changeFontfam = (className, classToAdd) => {
@@ -10,7 +11,7 @@ const changeFontfam = (className, classToAdd) => {
 
 const domCreation = () => {
   const hello = document.createElement("div");
-  hello.innerHTML = "Hello, webpack";
+  hello.textContent = "HAHAHAHAH";
   document.body.appendChild(hello);
 };
 
