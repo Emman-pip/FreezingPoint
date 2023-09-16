@@ -5,17 +5,17 @@ $blue-color: #00525c;
 
 @font-face {
   font-family: merit;
-  src: url("./fonts/merit4.ttf");
+  src: url("../fonts/merit4.ttf");
 }
 
 @font-face {
   font-family: ice;
-  src: url("./fonts/IceCaps.ttf");
+  src: url("../fonts/IceCaps.ttf");
 }
 
 @font-face {
   font-family: logo;
-  src: url("./fonts/Social_Shapes.ttf");
+  src: url("../fonts/Social_Shapes.ttf");
 }
 
 nav {
@@ -94,6 +94,95 @@ nav {
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
+
+  .section3Text {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    z-index: 1;
+  }
+
+  @mixin white-gradient {
+    background: linear-gradient(
+      to right,
+      #5e393143 0%,
+
+      rgba(255, 255, 255, 0) 10%
+    );
+  }
+
+  $animationSpeed: 40s;
+
+  // Animation
+  @keyframes scroll {
+    0% {
+      transform: translateX();
+    }
+    100% {
+      transform: translateX(calc(-20rem * 6));
+    }
+  }
+
+  // Styling
+  .slider {
+    background: $brown-color;
+    // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 50vh;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    // width: 100vw;
+    display: flex;
+    gap: 2rem;
+    // align-items: center;
+
+    &::before,
+    &::after {
+      @include white-gradient;
+      content: "";
+      height: 50vh;
+      position: absolute;
+      width: 100vw;
+      z-index: 2;
+    }
+
+    img {
+      height: 30vh;
+      width: 10rem;
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slide-track {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(20rem * 12);
+    }
+
+    .slide {
+      height: 100px;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
 
 .section3 {

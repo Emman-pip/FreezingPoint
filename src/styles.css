@@ -1,14 +1,14 @@
 @font-face {
   font-family: merit;
-  src: url("./fonts/merit4.ttf");
+  src: url("../fonts/merit4.ttf");
 }
 @font-face {
   font-family: ice;
-  src: url("./fonts/IceCaps.ttf");
+  src: url("../fonts/IceCaps.ttf");
 }
 @font-face {
   font-family: logo;
-  src: url("./fonts/Social_Shapes.ttf");
+  src: url("../fonts/Social_Shapes.ttf");
 }
 nav {
   background-color: #ff7962;
@@ -79,6 +79,70 @@ nav .brand {
   display: flex;
   justify-content: end;
   align-items: center;
+  position: relative;
+}
+.section2 .section3Text {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+  z-index: 1;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX();
+  }
+  100% {
+    transform: translateX(-120rem);
+  }
+}
+.section2 .slider {
+  background: #9c5d51;
+  height: 50vh;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+.section2 .slider::before, .section2 .slider::after {
+  background: linear-gradient(to right, rgba(94, 57, 49, 0.262745098) 0%, rgba(255, 255, 255, 0) 10%);
+  content: "";
+  height: 50vh;
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
+}
+.section2 .slider img {
+  height: 30vh;
+  width: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.section2 .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.section2 .slider::before {
+  left: 0;
+  top: 0;
+}
+.section2 .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240rem;
+}
+.section2 .slider .slide {
+  height: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section3 {
