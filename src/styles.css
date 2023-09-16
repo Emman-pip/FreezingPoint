@@ -152,6 +152,23 @@ nav .brand {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.section3 .section3Pics {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  min-height: 50vh;
+  display: flex;
+}
+.section3 .card {
+  width: 15rem;
+  background-color: #ffe5da;
+  height: 20rem;
+}
+.section3 .card img {
+  height: 10rem;
 }
 
 .section4 {

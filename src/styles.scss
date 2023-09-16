@@ -192,6 +192,32 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+
+  .section3Pics {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    // position: absolute;
+    // left: 0;
+    min-height: 50vh;
+    display: flex;
+  }
+  .card {
+    width: 15rem;
+    background-color: $secondary-color;
+    height: 20rem;
+
+    img {
+      height: 10rem;
+    }
+  }
+
+  // .section3Text {
+  //   z-index: 1;
+  //   background-color: $secondary-color;
+  // }
 }
 
 .section4 {
