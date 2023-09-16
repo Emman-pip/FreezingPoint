@@ -166,7 +166,7 @@ nav {
   }
   .section1Text {
     font-style: oblique;
-    text-align: end;
+    text-align: center;
   }
 }
 
@@ -291,6 +291,7 @@ nav {
     width: 15rem;
     background-color: $secondary-color;
     height: 20rem;
+    padding: 0.4rem;
 
     img {
       height: 10rem;
@@ -362,6 +363,11 @@ a {
   flex-direction: column;
   align-items: center;
 
+  .float-text {
+    font-size: medium;
+    color: $brown-color;
+  }
+
   .btn-float {
     color: $blue-color;
     background-color: $main-color;
@@ -391,6 +397,12 @@ a {
   .heroPage {
     .background {
       background-size: 100vw;
+    }
+  }
+
+  .section1Bg {
+    .section1Text {
+      text-align: end;
     }
   }
 }

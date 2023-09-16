@@ -141,7 +141,7 @@ nav .brand {
 }
 .section1Bg .section1Text {
   font-style: oblique;
-  text-align: end;
+  text-align: center;
 }
 
 .section2 {
@@ -238,6 +238,7 @@ nav .brand {
   width: 15rem;
   background-color: #ffe5da;
   height: 20rem;
+  padding: 0.4rem;
 }
 .section3 .card img {
   height: 10rem;
@@ -295,6 +296,10 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.floating .float-text {
+  font-size: medium;
+  color: #9c5d51;
+}
 .floating .btn-float {
   color: #00525c;
   background-color: #ff7962;
@@ -319,5 +324,8 @@ a {
   }
   .heroPage .background {
     background-size: 100vw;
+  }
+  .section1Bg .section1Text {
+    text-align: end;
   }
 }/*# sourceMappingURL=styles.css.map */
