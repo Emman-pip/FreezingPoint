@@ -1,3 +1,7 @@
+body {
+  background-color: #ffe5da;
+}
+
 @font-face {
   font-family: merit;
   src: url("../fonts/merit4.ttf");
@@ -10,11 +14,39 @@
   font-family: logo;
   src: url("../fonts/Social_Shapes.ttf");
 }
+@media (min-width: 992px) {
+  nav {
+    background-color: #ff7962;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  nav .navContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  nav #navbarNavDropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ffe5da;
+  }
+}
 nav {
   background-color: #ff7962;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+nav .containBrand {
+  display: flex;
+  justify-content: space-between;
 }
 nav .nav-link {
-  font-family: ice;
+  font-family: merit;
+}
+nav .nav-item {
+  border-radius: 0.2rem;
 }
 nav .brand {
   font-weight: 500;

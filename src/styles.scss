@@ -3,6 +3,10 @@ $secondary-color: #ffe5da;
 $brown-color: #9c5d51;
 $blue-color: #00525c;
 
+body {
+  background-color: $secondary-color;
+}
+
 @font-face {
   font-family: merit;
   src: url("../fonts/merit4.ttf");
@@ -18,11 +22,45 @@ $blue-color: #00525c;
   src: url("../fonts/Social_Shapes.ttf");
 }
 
+@media (min-width: 992px) {
+  nav {
+    background-color: $main-color;
+    position: sticky;
+    top: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+    .navContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #navbarNavDropdown {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top: 1px solid $secondary-color;
+    }
+  }
+}
+
 nav {
   background-color: $main-color;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  .containBrand {
+    display: flex;
+    justify-content: space-between;
+  }
 
   .nav-link {
-    font-family: ice;
+    font-family: merit;
+  }
+
+  .nav-item {
+    // background-color: $brown-color;
+    border-radius: 0.2rem;
   }
 
   .brand {
