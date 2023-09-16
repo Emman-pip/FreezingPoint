@@ -4,12 +4,12 @@ const changeFontfam = (className, classToAdd) => {
   });
 };
 
-const appendImage = (element, image, classname) => {
-  const img = new Image();
-  img.src = image;
-  img.classList.add(classname);
-  element.appendChild(img);
-};
+// const appendImage = (element, image, classname) => {
+//   const img = new Image();
+//   img.src = image;
+//   img.classList.add(classname);
+//   element.appendChild(img);
+// };
 
 function animationTrigger(section, animationName, name, expand = null) {
   const options = {
