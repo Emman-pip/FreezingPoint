@@ -167,6 +167,10 @@ nav .brand {
 .section4 .section4Title {
   color: #ffe5da;
 }
+.section4 .storePic {
+  max-height: 80vh;
+  width: auto;
+}
 
 .section5 {
   display: flex;
