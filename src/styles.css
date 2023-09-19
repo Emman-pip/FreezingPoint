@@ -18,9 +18,7 @@ body {
   src: url("../fonts/Social_Shapes.ttf");
 }
 nav {
-  background-color: #ff7962;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  background-color: #00525c;
 }
 nav .containBrand {
   display: flex;
@@ -28,9 +26,6 @@ nav .containBrand {
 }
 nav .nav-link {
   font-family: merit;
-}
-nav .nav-item {
-  border-radius: 0.2rem;
 }
 nav .brand {
   font-weight: 500;
@@ -95,19 +90,19 @@ nav .brand {
   box-shadow: -1rem 1rem 10px rgba(0, 0, 0, 0.299);
 }
 .heroPage .servicesOnParag:hover {
-  color: #00525c;
+  color: #ff7962;
 }
 .heroPage .mainLogo {
   text-align: left;
   z-index: 1;
   font-family: merit;
-  color: #ff7962;
+  color: #00525c;
   -webkit-text-stroke: 0.1rem black;
   text-align: left;
 }
 .heroPage .abtUsTitle {
   font-family: merit;
-  color: #ff7962;
+  color: #00525c;
   -webkit-text-stroke: 0.1rem black;
   text-align: left;
 }
@@ -127,7 +122,7 @@ nav .brand {
 }
 
 .section1Bg {
-  background-color: #00525c;
+  background-color: #ff7962;
   min-height: 50vh;
   display: flex;
   justify-content: center;
@@ -218,7 +213,7 @@ nav .brand {
 }
 
 .section3 {
-  background-color: #ff7962;
+  background-color: #00525c;
   min-height: 50vh;
   color: black;
   display: flex;
@@ -245,7 +240,7 @@ nav .brand {
 }
 
 .section4 {
-  background-color: #00525c;
+  background-color: #ff7962;
 }
 .section4 .d-block {
   margin-left: auto;
@@ -279,7 +274,7 @@ nav .brand {
   align-items: center;
 }
 .section5 .btn-blue {
-  color: #00525c;
+  color: #ff7962;
   font-size: 4rem;
 }
 
@@ -301,26 +296,22 @@ a {
   color: #9c5d51;
 }
 .floating .btn-float {
-  color: #00525c;
-  background-color: #ff7962;
+  color: #ff7962;
+  background-color: #00525c;
   font-family: logo;
 }
 
 @media (min-width: 992px) {
   nav {
-    background-color: #ff7962;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    background-color: #00525c;
   }
   nav .navContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
   }
   nav #navbarNavDropdown {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #ffe5da;
+    justify-content: end;
   }
   .heroPage .background {
     background-size: 100vw;
