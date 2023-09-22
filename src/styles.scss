@@ -1,7 +1,7 @@
-$main-color: #ff7962;
-$secondary-color: #ffe5da;
-$brown-color: #9c5d51;
-$blue-color: #00525c;
+$main-color: #9ee9f2;
+$secondary-color: #00c59d;
+$brown-color: #fcfcd4;
+$blue-color: #fcfcd4;
 
 @font-face {
   font-family: merit;
@@ -22,49 +22,27 @@ nav {
   background-color: $main-color;
 
   .nav-link {
-    font-family: ice;
+    // font-family: ice;
   }
 
   .brand {
-    font-weight: 500;
-    font-family: ice;
+    // font-weight: 500;
+    // font-family: ice;
   }
 }
 
 .heroPage {
-  background-color: $secondary-color;
+  background-color: $main-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  min-height: 100vh;
 
   .freezingPoint {
     text-align: center;
     font-family: ice;
-  }
-
-  .mainLogo {
-    text-align: center;
-    font-family: merit;
-    color: $main-color;
-    -webkit-text-stroke: 3px black;
-  }
-
-  .servicesOffered {
-    background-color: $brown-color;
-    color: $secondary-color;
-    width: fit-content;
-    border-radius: 0.5rem;
-  }
-
-  .checks > div {
-    /* text-align: center; */
-    color: #00525c;
-  }
-
-  .soText {
-    font-weight: 400;
   }
 }
 

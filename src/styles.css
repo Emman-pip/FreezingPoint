@@ -11,58 +11,31 @@
   src: url("../fonts/Social_Shapes.ttf");
 }
 nav {
-  background-color: #ff7962;
+  background-color: #9ee9f2;
 }
-nav .nav-link {
-  font-family: ice;
-}
-nav .brand {
-  font-weight: 500;
-  font-family: ice;
-}
-
 .heroPage {
-  background-color: #ffe5da;
+  background-color: #9ee9f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  min-height: 100vh;
 }
 .heroPage .freezingPoint {
   text-align: center;
   font-family: ice;
 }
-.heroPage .mainLogo {
-  text-align: center;
-  font-family: merit;
-  color: #ff7962;
-  -webkit-text-stroke: 3px black;
-}
-.heroPage .servicesOffered {
-  background-color: #9c5d51;
-  color: #ffe5da;
-  width: -moz-fit-content;
-  width: fit-content;
-  border-radius: 0.5rem;
-}
-.heroPage .checks > div {
-  /* text-align: center; */
-  color: #00525c;
-}
-.heroPage .soText {
-  font-weight: 400;
-}
 
 .section1Bg {
-  background-color: #00525c;
+  background-color: #fcfcd4;
   min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .section1Bg .section1 {
-  color: #ffe5da;
+  color: #00c59d;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -73,9 +46,9 @@ nav .brand {
 }
 
 .section2 {
-  background-color: #9c5d51;
+  background-color: #fcfcd4;
   min-height: 50vh;
-  color: #ffe5da;
+  color: #00c59d;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -98,7 +71,7 @@ nav .brand {
   }
 }
 .section2 .slider {
-  background: #9c5d51;
+  background: #fcfcd4;
   height: 50vh;
   margin: auto;
   overflow: hidden;
@@ -146,7 +119,7 @@ nav .brand {
 }
 
 .section3 {
-  background-color: #ff7962;
+  background-color: #9ee9f2;
   min-height: 50vh;
   color: black;
   display: flex;
@@ -164,7 +137,7 @@ nav .brand {
 }
 .section3 .card {
   width: 15rem;
-  background-color: #ffe5da;
+  background-color: #00c59d;
   height: 20rem;
 }
 .section3 .card img {
@@ -172,17 +145,17 @@ nav .brand {
 }
 
 .section4 {
-  background-color: #00525c;
+  background-color: #fcfcd4;
 }
 .section4 .d-block {
   margin-left: auto;
   margin-right: auto;
 }
 .section4 .img-thumbnail {
-  background-color: #ffe5da;
+  background-color: #00c59d;
 }
 .section4 .section4Title {
-  color: #ffe5da;
+  color: #00c59d;
 }
 .section4 .storePic {
   max-height: 80vh;
@@ -206,7 +179,7 @@ nav .brand {
   align-items: center;
 }
 .section5 .btn-blue {
-  color: #00525c;
+  color: #fcfcd4;
   font-size: 4rem;
 }
 
@@ -224,7 +197,7 @@ a {
   align-items: center;
 }
 .floating .btn-float {
-  color: #00525c;
-  background-color: #ff7962;
+  color: #fcfcd4;
+  background-color: #9ee9f2;
   font-family: logo;
 }/*# sourceMappingURL=styles.css.map */
