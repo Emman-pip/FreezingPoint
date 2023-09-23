@@ -1,7 +1,8 @@
 $main-color: #9ee9f2;
+$faded-main: #9eeaf2bd;
 $secondary-color: #00c59d;
 $brown-color: #fcfcd4;
-$blue-color: #fcfcd4;
+$blue-color: black;
 
 @font-face {
   font-family: merit;
@@ -18,8 +19,12 @@ $blue-color: #fcfcd4;
   src: url("../fonts/Social_Shapes.ttf");
 }
 
+main {
+  background-color: $brown-color;
+}
+
 nav {
-  background-color: $main-color;
+  background-color: $secondary-color;
 
   .nav-link {
     // font-family: ice;
@@ -31,24 +36,109 @@ nav {
   }
 }
 
+@media (min-width: 992px) {
+  .imageHero {
+    width: 40rem;
+  }
+
+  .heroPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section1Text {
+    text-align: end;
+  }
+}
+
 .heroPage {
-  background-color: $main-color;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  // align-items: center;
   gap: 1rem;
   min-height: 100vh;
+  max-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    $secondary-color 0%,
+    $secondary-color 25%,
+    $brown-color 25%,
+    $brown-color 100%
+  );
 
-  .freezingPoint {
-    text-align: center;
-    font-family: ice;
+  .imageHero {
+    height: auto;
+    max-width: 80vw;
+    flex-shrink: 2;
+    align-self: flex-end;
+  }
+
+  .heroTexts {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+    .subtext {
+      font-size: 0.7rem;
+      color: $secondary-color;
+    }
+
+    .freezingPoint {
+      text-align: center;
+      // font-family: ice;
+      color: $blue-color;
+      // -webkit-text-stroke: 1px $main-color;
+      align-self: flex-start;
+    }
+
+    .book {
+      background-color: $secondary-color;
+      padding: 0.5rem;
+      border-radius: 0.6rem;
+      text-decoration: none;
+      color: $blue-color;
+      border: 1px solid $brown-color;
+      align-self: flex-start;
+      width: 10rem;
+      text-align: center;
+    }
+    .book:hover {
+      background-color: $main-color;
+    }
+
+    .abtUs {
+      width: 10rem;
+      text-align: center;
+      text-decoration: none;
+      color: $blue-color;
+      padding: 0.3rem;
+      height: 4rem;
+      border: 2px solid $secondary-color;
+      align-self: flex-start;
+      border-radius: 0.6rem;
+    }
   }
 }
 
 .section1Bg {
-  background-color: $blue-color;
-  min-height: 50vh;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    $faded-main,
+    $main-color 10rem
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black,
+    black,
+    black,
+    transparent
+  );
+  // backdrop-filter: blur(0.2rem);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +151,12 @@ nav {
   }
   .section1Text {
     font-style: oblique;
-    text-align: end;
+    text-align: center;
+    color: $blue-color;
+  }
+
+  .map {
+    border-radius: 0.6rem;
   }
 }
 
@@ -106,7 +201,8 @@ nav {
 
   // Styling
   .slider {
-    background: $brown-color;
+    background: $main-color;
+    mask-image: linear-gradient(bottom, transparent, black, transparent);
     // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 50vh;
     margin: auto;
@@ -258,8 +354,7 @@ a {
   align-items: center;
 
   .btn-float {
-    color: $blue-color;
-    background-color: $main-color;
     font-family: logo;
+    color: $secondary-color;
   }
 }

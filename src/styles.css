@@ -10,26 +10,86 @@
   font-family: logo;
   src: url("../fonts/Social_Shapes.ttf");
 }
+main {
+  background-color: #fcfcd4;
+}
+
 nav {
-  background-color: #9ee9f2;
+  background-color: #00c59d;
+}
+@media (min-width: 992px) {
+  .imageHero {
+    width: 40rem;
+  }
+  .heroPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section1Text {
+    text-align: end;
+  }
 }
 .heroPage {
-  background-color: #9ee9f2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   min-height: 100vh;
+  max-height: 100vh;
+  background-image: linear-gradient(to bottom, #00c59d 0%, #00c59d 25%, #fcfcd4 25%, #fcfcd4 100%);
 }
-.heroPage .freezingPoint {
+.heroPage .imageHero {
+  height: auto;
+  max-width: 80vw;
+  flex-shrink: 2;
+  align-self: flex-end;
+}
+.heroPage .heroTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.heroPage .heroTexts .subtext {
+  font-size: 0.7rem;
+  color: #00c59d;
+}
+.heroPage .heroTexts .freezingPoint {
   text-align: center;
-  font-family: ice;
+  color: black;
+  align-self: flex-start;
+}
+.heroPage .heroTexts .book {
+  background-color: #00c59d;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #fcfcd4;
+  align-self: flex-start;
+  width: 10rem;
+  text-align: center;
+}
+.heroPage .heroTexts .book:hover {
+  background-color: #9ee9f2;
+}
+.heroPage .heroTexts .abtUs {
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 0.3rem;
+  height: 4rem;
+  border: 2px solid #00c59d;
+  align-self: flex-start;
+  border-radius: 0.6rem;
 }
 
 .section1Bg {
-  background-color: #fcfcd4;
-  min-height: 50vh;
+  background-image: repeating-linear-gradient(45deg, transparent, rgba(158, 234, 242, 0.7411764706), #9ee9f2 10rem);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black, black, black, transparent);
+          mask-image: linear-gradient(to bottom, transparent, black, black, black, transparent);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +102,11 @@ nav {
 }
 .section1Bg .section1Text {
   font-style: oblique;
-  text-align: end;
+  text-align: center;
+  color: black;
+}
+.section1Bg .map {
+  border-radius: 0.6rem;
 }
 
 .section2 {
@@ -71,7 +135,9 @@ nav {
   }
 }
 .section2 .slider {
-  background: #fcfcd4;
+  background: #9ee9f2;
+  -webkit-mask-image: linear-gradient(bottom, transparent, black, transparent);
+          mask-image: linear-gradient(bottom, transparent, black, transparent);
   height: 50vh;
   margin: auto;
   overflow: hidden;
@@ -145,7 +211,7 @@ nav {
 }
 
 .section4 {
-  background-color: #fcfcd4;
+  background-color: black;
 }
 .section4 .d-block {
   margin-left: auto;
@@ -179,7 +245,7 @@ nav {
   align-items: center;
 }
 .section5 .btn-blue {
-  color: #fcfcd4;
+  color: black;
   font-size: 4rem;
 }
 
@@ -197,7 +263,6 @@ a {
   align-items: center;
 }
 .floating .btn-float {
-  color: #fcfcd4;
-  background-color: #9ee9f2;
   font-family: logo;
+  color: #00c59d;
 }/*# sourceMappingURL=styles.css.map */
