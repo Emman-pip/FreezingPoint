@@ -174,21 +174,30 @@ nav {
 }
 
 .section4 {
-  background-color: black;
+  background-color: #9ee9f2;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .section4 .d-block {
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.section4 .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section4 .img-thumbnail {
   background-color: #00c59d;
 }
 .section4 .section4Title {
-  color: #00c59d;
+  color: black;
 }
 .section4 .storePic {
-  max-height: 80vh;
-  width: auto;
+  min-height: 40vh;
+  width: 80vh;
 }
 
 .section5 {

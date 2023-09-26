@@ -260,11 +260,21 @@ nav {
 }
 
 .section4 {
-  background-color: $blue-color;
+  background-color: $main-color;
+  height: fit-content;
 
   .d-block {
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .img-thumbnail {
@@ -272,12 +282,12 @@ nav {
   }
 
   .section4Title {
-    color: $secondary-color;
+    color: $blue-color;
   }
 
   .storePic {
-    max-height: 80vh;
-    width: auto;
+    min-height: 40vh;
+    width: 80vh;
   }
 }
 
