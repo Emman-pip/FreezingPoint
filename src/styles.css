@@ -135,23 +135,12 @@ nav {
   }
 }
 .section2 .slider {
-  background: #9ee9f2;
-  -webkit-mask-image: linear-gradient(bottom, transparent, black, transparent);
-          mask-image: linear-gradient(bottom, transparent, black, transparent);
   height: 50vh;
   margin: auto;
   overflow: hidden;
   position: relative;
   display: flex;
   gap: 2rem;
-}
-.section2 .slider::before, .section2 .slider::after {
-  background: linear-gradient(to right, rgba(94, 57, 49, 0.262745098) 0%, rgba(255, 255, 255, 0) 10%);
-  content: "";
-  height: 50vh;
-  position: absolute;
-  width: 100vw;
-  z-index: 2;
 }
 .section2 .slider img {
   height: 30vh;
@@ -182,32 +171,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.section3 {
-  background-color: #9ee9f2;
-  min-height: 50vh;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.section3 .section3Pics {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-  min-height: 50vh;
-  display: flex;
-}
-.section3 .card {
-  width: 15rem;
-  background-color: #00c59d;
-  height: 20rem;
-}
-.section3 .card img {
-  height: 10rem;
 }
 
 .section4 {

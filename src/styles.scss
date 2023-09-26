@@ -201,8 +201,8 @@ nav {
 
   // Styling
   .slider {
-    background: $main-color;
-    mask-image: linear-gradient(bottom, transparent, black, transparent);
+    // background: $main-color;
+    // mask-image: linear-gradient(bottom, transparent, black, transparent);
     // box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 50vh;
     margin: auto;
@@ -213,15 +213,15 @@ nav {
     gap: 2rem;
     // align-items: center;
 
-    &::before,
-    &::after {
-      @include white-gradient;
-      content: "";
-      height: 50vh;
-      position: absolute;
-      width: 100vw;
-      z-index: 2;
-    }
+    // &::before,
+    // &::after {
+    //   @include white-gradient;
+    //   content: "";
+    //   height: 50vh;
+    //   position: absolute;
+    //   width: 100vw;
+    //   z-index: 2;
+    // }
 
     img {
       height: 30vh;
@@ -257,41 +257,6 @@ nav {
       justify-content: center;
     }
   }
-}
-
-.section3 {
-  background-color: $main-color;
-  min-height: 50vh;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-  .section3Pics {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-    // position: absolute;
-    // left: 0;
-    min-height: 50vh;
-    display: flex;
-  }
-  .card {
-    width: 15rem;
-    background-color: $secondary-color;
-    height: 20rem;
-
-    img {
-      height: 10rem;
-    }
-  }
-
-  // .section3Text {
-  //   z-index: 1;
-  //   background-color: $secondary-color;
-  // }
 }
 
 .section4 {
